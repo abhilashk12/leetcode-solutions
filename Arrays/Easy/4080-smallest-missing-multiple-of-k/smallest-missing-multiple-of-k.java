@@ -5,14 +5,13 @@ class Solution {
         for(int i : nums){
             set.add(i);
         }
-            System.out.println(set);
+        
+        int multiple = k;
 
-        for(int i=k; i<=100+k; i+=k){
-            System.out.println(i);
-            if(!set.contains(i)){
-                return i;
-            }
+        while(set.contains(multiple)){
+            multiple += k;
         }
-        return 1;
+
+        return multiple;
     }
 }
