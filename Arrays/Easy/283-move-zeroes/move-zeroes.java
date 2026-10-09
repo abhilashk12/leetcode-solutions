@@ -10,7 +10,7 @@ class Solution {
         }
 
         for(int i=insertPos; i<nums.length; i++){
-            nums[i] = 0;
+            nums[i]=0;
         }
         System.out.println(Arrays.toString(nums));
     }
